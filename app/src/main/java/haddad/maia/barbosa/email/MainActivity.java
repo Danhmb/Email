@@ -26,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
         //Pega o botão principal pelo id
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
-            //Define um evento quando o botão é clicado
             public void onClick(View v) {
+                //Define um evento quando o botão é clicado
+
                 EditText etEmail = findViewById(R.id.etEmail);
                 //Pega o campo de texto do email pelo id
 
@@ -35,16 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 //Pega o texto dentro do email e converte para string
 
                 EditText etTexto = findViewById(R.id.etTexto);
-                //Pega o campo de texto do email pelo id
+                //Pega o campo de texto pelo id
 
                 String texto = etTexto.getText().toString();
-                //Pega o texto dentro do email e converte para string
+                //Pega o texto dentro e converte para string
 
                 EditText etAssunto = findViewById(R.id.etAssunto);
-                //Pega o campo de texto do email pelo id
+                //Pega o campo de texto do assunto pelo id
 
                 String assunto = etAssunto.getText().toString();
-                //Pega o texto dentro do email e converte para string
+                //Pega o texto dentro do assunto e converte para string
 
                 Intent i = new Intent(Intent.ACTION_SENDTO);
                 //cria a intenção sem destino especificado
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 /*
 
-                tenta abrir uma aba de opções para o usuário escolher entre os apps,
+                tenta abrir uma aba de opções para o usuário escolher entre os apps para enviar os emails,
                 caso não tenha um  o sistema ira dizer "Não há nenhum app que possa realizar essa operação"
 
                  */
