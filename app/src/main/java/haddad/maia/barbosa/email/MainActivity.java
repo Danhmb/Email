@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 //Pega o texto dentro do assunto e converte para string
 
                 Intent i = new Intent(Intent.ACTION_SENDTO);
-                //cria a intenção sem destino especificado
+                //cria a intenção para tratar a acao SENDTO
 
                 i.setData(Uri.parse("mailto:"));
                 //A intenção diz que queremos somente os apps tipo email
